@@ -24,7 +24,7 @@ let SongContainer = () => {
   //subscribing to store
   //search comming from store as you write the key and text comming from initial value at slice
   let searchBar = useSelector((store) => store.search.text);
-  console.log(searchBar);
+  // console.log(searchBar);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -43,7 +43,7 @@ let SongContainer = () => {
       setPage((page) => page + 1);
     }
   };
-  console.log(page);
+  // console.log(page);
 
   async function musicListApi() {
     let temp = await fetch(
@@ -73,7 +73,7 @@ let SongContainer = () => {
 
   useEffect(() => {
     musicListApi();
-    console.log(musicList);
+    // console.log(musicList);
   }, [page]);
 
   if (musicList.length === 0) {
@@ -90,7 +90,7 @@ let SongContainer = () => {
             {filteredMusicList &&
               filteredMusicList.map((data, index) => {
                 return (
-                  <Link to={`/songs/${data._id}`}><SongCard key={index} list={data} /></Link>
+                  <Link key={index} to={`/songs/${data._id}`}><SongCard key={index} list={data} /></Link>
                 );
               })}
           </div>

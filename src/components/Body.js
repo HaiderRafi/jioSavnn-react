@@ -1,22 +1,36 @@
-import React from "react"
-import SideBar from "./SideBar"
-import SongContainer from "./SongContainer"
-import { Outlet } from "react-router-dom"
-import Header from "./Header"
-import SignIn from "./SignIn"
+import React, { useEffect } from "react";
+import SideBar from "./SideBar";
+import SongContainer from "./SongContainer";
+import { Outlet, useNavigate } from "react-router-dom";
+import Header from "./Header";
+import SignUp from "./SignUp";
+import { useSelector } from 'react-redux'
+import Login from './Login';
 
-let Body=()=>{
-    return(
-        <>
-        <div><Header/></div>
-        {/* i remove flex ffrom here */}
-        <div className="flex "> 
-        {/* <SideBar/> */}
-        {/* <SongContainer/> */}
-        <Outlet/>
-        </div>
-        </>
-    )
-}
 
-export default Body
+let Body = () => {
+
+    let isUserLogin=useSelector((store)=>store.login.islogin);
+    console.log(isUserLogin);
+   
+    
+    
+   
+  return  !isUserLogin?.token?<Login/>: (
+    <>
+    
+      <div>
+        <Header />
+      </div>
+
+      <div className="flex ">
+        <Outlet />
+      </div>
+      
+      
+    </>
+  );
+
+};
+
+export default Body;

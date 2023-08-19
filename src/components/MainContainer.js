@@ -1,10 +1,30 @@
-import React from 'react'
-import SongContainer from './SongContainer'
+import React, { useEffect } from "react";
+import SongContainer from "./SongContainer";
+import { useSelector } from "react-redux";
+import Login from "./Login";
 
 const MainContainer = () => {
   return (
-    <div><SongContainer/></div>
-  )
-}
+    <div>
+      <SongContainer />
+    </div>
+  );
+};
 
-export default MainContainer
+
+//this is working ok!!!
+// const MainContainer = () => {
+ 
+//   let isUserLogin=useSelector((store)=>store.login.islogin);
+//   console.log(isUserLogin);
+
+//   return !isUserLogin.token?<Login/>: (
+//     <div><SongContainer/></div>
+//   )
+// }
+
+
+
+export default MainContainer;
+
+

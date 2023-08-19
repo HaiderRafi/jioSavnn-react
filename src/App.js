@@ -10,7 +10,10 @@ import MainContainer from "./components/MainContainer";
 import Radio from "./components/Radio";
 import { Provider } from "react-redux";
 import store from "./utils/store";
-import SignIn from "./components/SignIn";
+// import SignUp from "./components/Sigup";
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
+import HistorySection from "./components/HistorySection";
 
 
 let appRouter=createBrowserRouter([{
@@ -26,12 +29,36 @@ let appRouter=createBrowserRouter([{
       element:<MainContainer/>
     },
     {
+      path:"/release",
+      element:<MainContainer/>
+    },
+    {
+      path:"/topPlaylist",
+      element:<MainContainer/>
+    },
+    {
+      path:"/topArtist",
+      element:<MainContainer/>
+    },
+    {
+      path:"/podcasts",
+      element:<MainContainer/>
+    },
+    {
       path:"/radio",
       element:<Radio/>
     },
     {
-      path:"/signin",
-      element:<SignIn/>
+      path:"/history",
+      element:<HistorySection/>
+    },
+    {
+      path:"/signup",
+      element:<SignUp/>
+    },
+    {
+      path:"/login",
+      element:<Login/>
     },
     {
       path:"/songs/:id",
@@ -50,10 +77,10 @@ function App() {
       <div className="">
         {/* <Header/> */}
         {/* <Body/> */}
-        <Footer/>
+        {/* <Footer/>       */} {/* if i uncomment this the footer will show on main page  */}
        
         <RouterProvider router={appRouter}/> 
-         {/* <Footer/> */}
+         
 
       </div>
       </Provider>

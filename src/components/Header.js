@@ -94,10 +94,8 @@ let Header = () => {
 
       <div className="flex items-center space-x-2">
         <div className="pr-2 font-semibold hidden md:block">Music Language</div>
-        <div className="pr-2 font-semibold hidden md:block">Log In</div>
-        <Link to="/signin" className="pr-2 font-semibold hidden md:block">
-          Sign Up
-        </Link>
+       <a href="/"> <div className="pr-2 font-semibold hidden md:block">Log out</div></a>
+       
       </div>
     </div>
 
