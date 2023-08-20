@@ -4,9 +4,10 @@ let SongCard = (props) => {
   return (
     <>
       {/* h-[146.6px] */}
+      {/* w-52 */}
       <div className="p-2 m-2">
         <img
-          className="w-52  rounded-lg "
+          className="w-44  rounded-lg "
           src={props?.list?.artist[0]?.image}
           alt="Image"
         />

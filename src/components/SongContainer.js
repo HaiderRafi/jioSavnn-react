@@ -3,6 +3,7 @@ import SongCard from "./SongCard";
 import ShimmarUi from "./ShimmerUi";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import SideBar from "./SideBar";
 
 //for filteration logic
 let filterData = (searchBar, musicList) => {
@@ -82,7 +83,12 @@ let SongContainer = () => {
 
   return (
     <>
-      <div>
+    
+      <div className="flex">
+        <div className="w-1/2">
+        <SideBar/>
+        </div>
+      
         {filteredMusicList.length === 0 ? (
           <h1>Search Not Found!!!</h1>
         ) : (

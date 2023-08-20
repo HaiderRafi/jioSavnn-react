@@ -14,6 +14,7 @@ import store from "./utils/store";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import HistorySection from "./components/HistorySection";
+import Subscription from "./components/Subscription";
 
 
 let appRouter=createBrowserRouter([{
@@ -59,6 +60,10 @@ let appRouter=createBrowserRouter([{
     {
       path:"/login",
       element:<Login/>
+    },
+    {
+      path:"/subscription",
+      element:<Subscription/>
     },
     {
       path:"/songs/:id",

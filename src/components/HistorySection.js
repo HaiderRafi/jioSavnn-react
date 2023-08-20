@@ -7,7 +7,9 @@ import SideBar from './SideBar'
 const HistorySection = () => {
   return (
     <>
-    <SideBar/>
+    <div className='flex'>
+      <div><SideBar/></div>
+    
     <div className="p-4">
     <h2 className="text-xl font-semibold mb-4">Recently Played</h2>
     <div className="grid grid-cols-2 gap-4">
@@ -28,6 +30,7 @@ const HistorySection = () => {
         </div>
       ))}
     </div>
+  </div>
   </div>
   </>
   )

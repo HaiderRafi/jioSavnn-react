@@ -4,7 +4,8 @@ import SideBar from "./SideBar";
 const Radio = () => {
   return (
     <>
-      <SideBar />
+       <div className='flex'>
+      <div><SideBar/></div>
       
         <div className="flex justify-center items-center">
           
@@ -15,6 +16,7 @@ const Radio = () => {
           />
           <h1 className="text-gray-400">OOPS!!!Finding the Signals</h1>
           
+        </div>
         </div>
       
     </>
