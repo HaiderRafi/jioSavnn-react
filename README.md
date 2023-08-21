@@ -14,7 +14,7 @@ Jio Savnn is a modern audio streaming application built using React.js, Redux To
 
 * Subscription Page: Unlock premium features with a subscription. The Subscription Page offers exclusive benefits such as ad-free music, unlimited downloads, and original content.
 
-### Technologies Used
+### `Technologies Used`
 * React.js: A powerful JavaScript library used for building user interfaces. It provides the foundation for creating interactive components and managing application state.
 
 * Redux Toolkit: Redux Toolkit simplifies state management by providing utilities to manage Redux state, actions, and reducers in a more efficient and structured manner.
