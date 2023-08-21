@@ -10,7 +10,7 @@ const Radio = () => {
         <div className="flex justify-center items-center">
           
           <img
-            className="w-[500px] "
+            className="md:w-[500px]  w-[200px]"
             src="https://static.vecteezy.com/system/resources/previews/004/926/852/non_2x/broadcast-transmitter-antenna-icon-with-doodle-style-cartoon-vector.jpg"
             alt="image"
           />

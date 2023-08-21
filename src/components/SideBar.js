@@ -11,7 +11,7 @@ let SideBar = () => {
           <Link to="/release">
             <h1 className="font-bold pb-4 hover:underline">New Releases</h1>{" "}
           </Link>
-          <h1 className="font-bold pb-4">Top Charts</h1>
+          {/* <h1 className="font-bold pb-4">Top Charts</h1> */}
           <Link to="/topPlaylist">
             <h1 className="font-bold pb-4 hover:underline">Top Playlists</h1>
           </Link>
@@ -37,7 +37,7 @@ let SideBar = () => {
           <h1 className="font-bold pb-4 hover:underline">Songs</h1>
           <h1 className="font-bold pb-4 hover:underline">Albums</h1>
           <h1 className="font-bold pb-4 hover:underline">Podcasts</h1>
-          <h1 className="font-bold pb-4 hover:underline">Artists</h1>
+         <Link to="/artists"> <h1 className="font-bold pb-4 hover:underline">Artists</h1></Link>
         </div>
       </div>
     </>

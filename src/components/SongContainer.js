@@ -90,7 +90,8 @@ let SongContainer = () => {
         </div>
       
         {filteredMusicList.length === 0 ? (
-          <h1>Search Not Found!!!</h1>
+          // <h1 className="pl-20">Search Not Found!!!</h1>
+          <img className="w-[500px] h-[500px]" src="https://thumbs.dreamstime.com/b/no-found-symbol-unsuccessful-search-suitable-results-oops-page-failure-concept-flat-outline-vector-illustration-loupe-122872462.jpg"/>
         ) : (
           <div className="flex justify-evenly flex-wrap ">
             {filteredMusicList &&

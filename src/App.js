@@ -15,6 +15,7 @@ import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import HistorySection from "./components/HistorySection";
 import Subscription from "./components/Subscription";
+import Artists from "./components/Artists";
 
 
 let appRouter=createBrowserRouter([{
@@ -64,6 +65,10 @@ let appRouter=createBrowserRouter([{
     {
       path:"/subscription",
       element:<Subscription/>
+    },
+    {
+      path:"/artists",
+      element:<Artists/>
     },
     {
       path:"/songs/:id",

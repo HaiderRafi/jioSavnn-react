@@ -5,10 +5,10 @@ let Subscription = () => {
     <>
       <div className="h-screen">
         <div className="flex justify-center items-center flex-col bg-gray-800 w-full h-full">
-          <p className="p-5 text-white font-semibold text-5xl">
+          <p className="p-5 text-white text-lg font-bold   md:font-semibold md:text-5xl   ">
             Ad-free Music, Unlimited Downloads,{" "}
           </p>
-          <p className="p-5 text-white font-semibold text-5xl">
+          <p className="p-5 text-white text-lg font-bold  md:font-semibold md:text-5xl ">
             Execlusive Original Content and More
           </p>
 
@@ -55,6 +55,9 @@ let Subscription = () => {
           </div>
         </div>
       </div>
+
+
+
     </>
   );
 };

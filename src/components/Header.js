@@ -64,7 +64,7 @@ let Header = () => {
               />
             </a>
           </div>
-          <Link to="/music" className="pl-2 font-semibold hover:underline hidden md:block">
+          <Link to="/music" className="pl-2 font-semibold hover:underline ">
             Music
           </Link>
           <Link to="/podcasts">
@@ -103,7 +103,7 @@ let Header = () => {
           </select>
           <a href="/">
             {" "}
-            <div className="pr-2 font-semibold hidden hover:underline  md:block">Log out</div>
+            <div className="pr-2 font-semibold  hover:underline ">Log out</div>
           </a>
         </div>
       </div>
