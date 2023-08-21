@@ -16,6 +16,7 @@ import SignUp from "./components/SignUp";
 import HistorySection from "./components/HistorySection";
 import Subscription from "./components/Subscription";
 import Artists from "./components/Artists";
+import Podcast from "./components/Podcast";
 
 
 let appRouter=createBrowserRouter([{
@@ -44,7 +45,7 @@ let appRouter=createBrowserRouter([{
     },
     {
       path:"/podcasts",
-      element:<MainContainer/>
+      element:<Podcast/>
     },
     {
       path:"/radio",

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { searchText } from "../utils/searchSlice";
 
@@ -11,6 +11,12 @@ let Header = () => {
   function searchClickHandler(text) {
     dispatch(searchText(text));
   }
+
+  //for userName display on Logout Button
+  let isUserLogin = useSelector((store) => store.login.islogin);
+  // console.log(isUserLogin.data.name);
+  let userName=isUserLogin.data.name
+  
 
   return (
     <>
@@ -103,7 +109,7 @@ let Header = () => {
           </select>
           <a href="/">
             {" "}
-            <div className="pr-2 font-semibold  hover:underline ">Log out</div>
+            <div className="pr-2 font-semibold  hover:underline "><span className="font-bold" >{userName}: </span>Log out</div>
           </a>
         </div>
       </div>
@@ -112,3 +118,4 @@ let Header = () => {
 };
 
 export default Header;
+// haiderrafi.7@gmail.com
